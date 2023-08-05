@@ -1,0 +1,35 @@
+ACTIVITY 1
+
+Reference of YOUTUBE:
+1.	S1: New user account in Gmail/YouTube(sign-up)
+
+YouTube:
+
+•	Publisher : User Registration Service/Account Verification Service
+•	Subscriber : Welcome Notification service or notification service
+
+Gmail:
+•	Publisher : User Registration Service/Email Validation Service/Password Service/Account Initialization Service
+•	Subscriber : Welcome Email Service or Notification Service
+
+2.	S2 : The user logs in to YT using the account(sign_in)
+YouTube:
+•	Publisher : Authentication Service/User Profile Service/Analytics Service
+•	Subscriber : User Activity Service/Logging Service/Security Service/Error Handling Service
+
+3.	S3 : Create a subscription service in YT
+YouTube:
+•	Publisher : Recommendation Service/Subscription Management Service/Billing Service
+•	Subscriber : notification services/list services
+
+4.	S4 : User :: Create a channel
+YouTube:
+•	Publisher : Channel Creation Service/Channel Verification Service/Language Service/ Media Integration Service
+•	Subscriber : Email Notification Service/Channel Updated Service
+
+
+
+5.	S5 :: user --> channel --> uploads a video
+YouTube:
+•	Publisher : Video Upload Service/Content Management Service/Video Processing Service/ Service
+•	Subscriber : Notification Service/Transcript Generation Service/Thumbnail Service/Video Storage Service/Video Service
