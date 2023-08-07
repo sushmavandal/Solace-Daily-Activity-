@@ -1,0 +1,78 @@
+Day 2: 04/08/2023 [Delivery is due post assessment on 05/08]
+
+1. Refer FB + LinkedIn API's 
+	
+a.	Facebook API : Graph API
+ 
+This is the API which allows developers to interact with multiple nodes like they extract data and do functionality from Facebook platform.
+Applications can use this API to programmatically query data, post in pages and groups, and manage ads, among other tasks.
+
+Parameters of Facebook:
+•	Website standard parameters(availability,body_style,etc)
+•	App standard parameters(fb_availability,fb_body_style,etc)
+•	Offline standard parameters(availability,body_style,etc)
+
+Endpoints of  Facebook:
+•	Live_comments
+•	Live_reactions 
+
+
+b.	LinkedIn API : 
+
+LinkedIn API is a data extracting LinkedIn rest API to get public information for your business, products, or analytics.
+The LinkedIn data API enables third-party developers to create applications that retrieve data from LinkedIn. Developer Tools: Developers can use these tools to get data from LinkedIn profiles and create their own apps.
+.
+6. Queue and Topic endpoint:
+
+
+Queues - Queue is a topic-subscription-configured endpoint where clients can post and retrieve messages. Queues have the option to subscribe to many subjects, and they will all get messages that match their subscriptions. Queues can give one consumer exclusive access or access to several customers while distributing messages among them.
+
+Topic endpoints - An endpoint with a topic attracts messages posted to a certain topic for which it has a matching subscription. The messages will be delivered to any topic endpoint whose topic subscription matches the topic of the incoming messages.
+
+7. High availability of architecture: 
+
+	An strategy to defining a system's components, modules, or service implementations that guarantees top operational performance even under heavy demand is known as high availability architecture.
+If one of the two Solace message routers is taken out of service or fails, the other one will instantly take over for the clients, because of the ability to install two Solace message routers as a redundant pair. Clients and other Solace message routers in the network can mainly ignore this redundancy.
+
+8. NodeJS Code:
+a. NodeJS Code for Calculater : 
+var readline = require('readline sync');
+	
+	var Calculation = function(num1, num2, op) {
+	  this.x = parseInt(num1);
+	  this.y = parseInt(num2);
+	  this.op = op;
+	
+	  this.result = function() {
+	    var x = this.x;
+	    var y = this.y;
+	    var op = this.op;
+	
+	    if (op === "+") {
+	      var result = x + y;
+	    } else if (op === "-") {
+	      var result = x - y;
+	    } else if (op === "/") {
+	      var result = x / y;
+	    } else if (op === "*") {
+	      var result = x * y;
+	    } else if (op === "%") {
+	      var result = x % y;
+	    } else {
+	      var result = "Error!"
+	    }
+	
+	    console.log("Result: " + result);
+	  };
+	}
+	
+	var num1 = readline.question("Please enter a number: ");
+	var num2 = readline.question("Please enter another number: ");
+	var op = readline.question("Please enter an operator: ");
+	
+	var calc = new Calculation(num1, num2, op);
+	
+	calc.result();
+
+
+9.  Created new free account in Solace 
