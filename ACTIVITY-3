@@ -1,0 +1,46 @@
+Day: 3        [Date: 07-08-2023]
+
+(1) Read a text file + HTML file + JSON file using async method in NodeJS
+
+•	File1.js
+var fs=require("fs");
+fs.readFile('A1.html',function(err,data){
+ if(err) return console.error(err);
+ console.log(data.toString());
+});
+console.log("Program Ended");
+
+•	A1.html
+<html>
+<head>
+ <title>Welcome to Web page</title>
+</head>
+<body>
+ <h5>Hey you are in webpage!</h5>
+</body>
+</html>
+
+•	file1.json
+var fs=require("fs");
+fs.readFile('user.json',function(err,data){
+ if(err) return console.error(err);
+ console.log(data.toString());
+});
+console.log("Program Ended");
+
+•	user.json
+[{"name":"John","age":15]},
+{"name":"Ria","age":20]},
+{"name":"Henry","age":35]}]
+
+•	file2.json
+var fs=require("fs");
+fs.readFile('nodes.txt’',function(err,data){
+ if(err) return console.error(err);
+ console.log(data.toString());
+});
+console.log("Program Ended");
+
+•	nodes.txt 
+Hey there!!!
+
